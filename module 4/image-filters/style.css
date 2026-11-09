@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+  background-color: #f5f5f5;
+  color: #222222;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #205c2a;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+input {
+  font: inherit;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  padding: 7px 10px;
+  margin: 4px 5px 4px 0;
+  cursor: pointer;
+}
+
+#resetButton {
+  background-color: #dcefdc;
+  border: 1px solid #777777;
+}
+
+#status {
+  min-height: 24px;
+  color: #205c2a;
+}

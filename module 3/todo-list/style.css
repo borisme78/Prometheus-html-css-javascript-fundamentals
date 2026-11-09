@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: #222222;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #205c2a;
+}
+
+label {
+  display: inline-block;
+  margin: 4px 12px 4px 0;
+}
+
+button, input {
+  font: inherit;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button, input[type="button"] {
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 3px 0;
+}
+
+#status {
+  min-height: 1.5em;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  overflow-wrap: anywhere;
+}
+
+li button {
+  margin-right: 5px;
+}
+
+.done {
+  background-color: green;
+  color: white;
+}
+
+.remove {
+  background-color: #bc0000;
+  color: white;
+}
+
+.important {
+  background-color: lightblue;
+}
+
+li.finished {
+  color: white;
+  background-color: #666666;
+  text-decoration: line-through;
+}
+
+input[type="text"] {
+  padding: 6px;
+}
+
+.aboutcolor {
+  background-color: yellow;
+}
+
+#divabout {
+  width: 300px;
+  max-width: 100%;
+  font-size: 20px;
+  margin: 10px 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Фільтри зображень</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Фільтри зображень</h1>
+  <p>Мій мініпроєкт з JavaScript. Завантаж зображення та спробуй різні фільтри.</p>
+
+  <h2>Завантаження</h2>
+  <p><label>Зображення: <input type="file" id="fileInput" accept="image/*" onchange="loadImage()"></label></p>
+  <canvas id="canvas" width="600" height="350" aria-label="Зображення та результат фільтра"></canvas>
+
+  <h2>Обери фільтр</h2>
+  <p>Кожен фільтр працює з оригіналом, тому можна перемикати їх у будь-якому порядку.</p>
+  <div class="buttons">
+    <button type="button" id="grayButton" onclick="doGray()">Відтінки сірого</button>
+    <button type="button" id="redButton" onclick="doRed()">Червоний</button>
+    <button type="button" id="customButton" onclick="doCustom()">Футбольні смуги</button>
+    <button type="button" id="rainbowButton" onclick="doRainbow()">Веселка</button>
+    <button type="button" id="blurButton" onclick="doBlur()">Розмиття</button>
+  </div>
+  <p>«Футбольні смуги» — мій власний фільтр із зеленими смугами та білою лінією посередині.</p>
+
+  <p><button type="button" id="resetButton" onclick="resetImage()">Повернути оригінал</button></p>
+  <p id="status" role="status">Спочатку вибери зображення.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

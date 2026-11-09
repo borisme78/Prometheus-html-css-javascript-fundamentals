@@ -1,0 +1,67 @@
+/* Загальний вигляд сторінки. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #edf5ed;
+  color: #222222;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #205c2a;
+  text-align: center;
+}
+
+h2 {
+  color: #205c2a;
+}
+
+a {
+  color: #174c96;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+/* Один клас можна використати для декількох div. */
+.block {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Ідентифікатор оформлює тільки вступний блок. */
+#about {
+  background-color: #dcefdc;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999999;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #dcefdc;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+}

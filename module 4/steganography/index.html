@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стеганографія</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Приховування зображення</h1>
+  <p>Обери дві картинки. Друга буде прихована всередині першої.</p>
+
+  <div class="preview">
+    <h2>Основне зображення</h2>
+    <p><label>Файл: <input type="file" id="coverFile" accept="image/*" onchange="loadCover()"></label></p>
+    <canvas id="coverCanvas" width="360" height="240" aria-label="Основне зображення"></canvas>
+  </div>
+
+  <div class="preview">
+    <h2>Приховане зображення</h2>
+    <p><label>Файл: <input type="file" id="secretFile" accept="image/*" onchange="loadSecret()"></label></p>
+    <canvas id="secretCanvas" width="360" height="240" aria-label="Зображення для приховування"></canvas>
+  </div>
+
+  <p>
+    <button type="button" id="hideButton" onclick="hideImage()" disabled>Приховати зображення</button>
+    <button type="button" id="saveButton" onclick="saveImage()" disabled>Зберегти PNG</button>
+    <button type="button" onclick="clearAll()">Очистити</button>
+  </p>
+  <p id="status" role="status">Спочатку завантаж дві картинки.</p>
+
+  <h2>Результат</h2>
+  <canvas id="resultCanvas" width="600" height="350" aria-label="Зображення з прихованою картинкою"></canvas>
+
+  <h2>Перевірка розмірів і пікселя</h2>
+  <p id="sizes"></p>
+  <pre id="pixelInfo"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>

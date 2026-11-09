@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Інтерактивне полотно для малювання</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Інтерактивне полотно для малювання</h1>
+  <p>Малюй на полотні мишею або пальцем. Нижче можна вибрати колір і розмір пензля.</p>
+  <p>
+    <label>Ширина: <input type="number" id="widthInput" min="1" max="2000" step="1" value="600" onchange="setWidth(this)"></label>
+    <label>Висота: <input type="number" id="heightInput" min="1" max="2000" step="1" value="300" onchange="setHeight(this)"></label>
+  </p>
+  <canvas id="canvas1" width="600" height="300">Ваш браузер не підтримує Canvas.</canvas>
+  <p>
+    <label>Колір пензля: <input type="color" id="brushColor" value="#000000" oninput="changeColor(this.value)"></label>
+    <label>Радіус пензля: <input type="range" id="sizeInput" min="1" max="50" value="50" oninput="resizeBrush(this.value)"></label>
+    <output id="sizeOutput" for="sizeInput">50</output>
+  </p>
+  <button type="button" id="clear" onclick="clearCanvas()">Очистити полотно</button>
+  <p id="status" role="status">Зміна розміру очищає малюнок.</p>
+  <script src="./script.js"></script>
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2026 Борис Мельничук (https://codepen.io/mqfbthqo-the-sasster/pen/EaNzvvX)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+</body>
+</html>

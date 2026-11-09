@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: #222222;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #205c2a;
+}
+
+canvas {
+  border: 1px solid gray;
+  background-color: white;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+label {
+  display: inline-block;
+  margin: 4px 12px 4px 0;
+}
+
+button, input {
+  font: inherit;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 3px 0;
+}
+
+#status {
+  min-height: 1.5em;
+}
+
+canvas {
+  touch-action: none;
+  cursor: crosshair;
+}
+
+input[type="number"] {
+  width: 90px;
+}

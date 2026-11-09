@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зелений екран</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Зелений екран</h1>
+  <p>Завантаж передній план із зеленим тлом та задній план однакового розміру.
+    Після натискання «Компонувати» результат з’явиться праворуч.</p>
+
+  <canvas id="can1" width="400" height="300" aria-label="Передній план"></canvas>
+  <canvas id="can2" width="400" height="300" aria-label="Задній план і результат"></canvas>
+
+  <p>
+    <label>Передній план:
+      <input type="file" id="fgfile" accept="image/*" onchange="loadForegroundImage()">
+    </label>
+  </p>
+  <p>
+    <label>Задній план:
+      <input type="file" id="bgfile" accept="image/*" onchange="loadBackgroundImage()">
+    </label>
+  </p>
+
+  <button type="button" id="compose" onclick="doGreenScreen()" disabled>Компонувати</button>
+  <button type="button" onclick="clearCanvas()">Очистити полотна</button>
+  <p id="status" role="status"></p>
+  <script src="script.js"></script>
+</body>
+</html>
